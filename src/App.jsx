@@ -1,7 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
 import { useEffect } from "react";
 
@@ -11,7 +8,8 @@ function App() {
   const [result, setResult] = useState(0);
   const [operator, setOperator] = useState("+");
   const HandleEnter = () => {
-    // console.log(first, second); debugging
+    //testing the function
+    console.log(first, second);
     const no1 = parseInt(first);
     const no2 = parseInt(second);
     setResult(operator === "+" ? no1 + no2 : no1 - no2);
